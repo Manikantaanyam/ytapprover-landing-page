@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 const Hero = () => {
   return (
     <div className="p-6 flex flex-col items-center mt-20">
-      <div className="flex gap-3 items-center bg-[#E7E9EC] border-t border-blue-500 rounded-full text-black p-2 px-3">
+      <div className="flex gap-3 items-center bg-[#E7E9EC] border-t-2 border-blue-500 rounded-full text-black p-2 px-3">
         <Sparkles className="w-4 h-4" />
         <span className="text-sm font-medium">
           Simplify Your Video Approval Process
@@ -15,7 +15,7 @@ const Hero = () => {
         <p>
           Review, Approve, and{" "}
           <span className="relative isolate text-[#ff0000] ms-4">
-            Publish
+            Upload
             <span className="absolute -z-10 top-2 -left-6 -right-4 bottom-0.5 bg-white/5 rounded-full px-8  ms-3 border-t border-foreground shadow-[inset_0px_0px_30px_0px] shadow-foreground/20 md:top-3 md:bottom-1 lg:top-2 lg:bottom-2 "></span>
           </span>
         </p>
@@ -27,7 +27,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="mt-7 mx-auto flex gap-4">
-        <Button className="bg-[#ff0000] hover:bg-[#ff0000]/80 text-white ">
+        <Button className="bg-[#ff0000] hover:bg-[#ff0000]/90 text-white ">
           Get started
         </Button>
         <Button>

@@ -14,7 +14,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex gap-5">
-        <Button className="font-medium text-white bg-blue-600 hover:bg-blue-700 p-2 rounded-md">
+        <Button className="font-medium text-white bg-[#ff0000] hover:bg-[#ff0000]/90 p-2 rounded-md">
           Get started
         </Button>
         <div>

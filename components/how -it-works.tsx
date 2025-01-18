@@ -7,12 +7,12 @@ const worksData = [
     desc: "Editors upload finished videos to the platform along with metadata (title, description, tags, etc.) in a secure, simple process.",
   },
   {
-    icon: <CheckCircle color="lightgreen" />,
+    icon: <CheckCircle color="green" />,
     title: "Creator Approval",
     desc: "Creators receive instant notifications (via Slack or WhatsApp) to approve, reject, or request edits for videos.",
   },
   {
-    icon: <Rocket color="yellow" />,
+    icon: <Rocket color="red" />,
     title: "Upload to YouTube",
     desc: "Once the creator approves, the video is automatically uploaded to their YouTube channel—securely, without giving full account access to anyone.",
   },
@@ -20,19 +20,21 @@ const worksData = [
 
 const HowItWorks = () => {
   return (
-    <div className="mt-10 flex flex-col items-center">
-      <h1 className="text-2xl font-semibold">How it works ?</h1>
-      <div className="flex gap-3 mx-auto mt-6 px-10">
+    <div className="mt-14 flex flex-col items-center">
+      <h1 className="text-2xl font-thin">How YtApprover works ?</h1>
+      <div className="flex gap-3 mx-auto mt-10 px-10">
         {worksData.map(({ title, desc, icon }, key) => (
           <div
-            className="flex flex-col space-y-3 border border-hidden rounded-md bg-gray-700/80 dark:bg-zinc-800  p-6 max-w-xs"
+            className="flex flex-col space-y-3 border shadow-md rounded-md dark:bg-gray-900/60  p-6 max-w-xs"
             key={key}
           >
             <div className="flex gap-2">
-              <span>{icon}</span>
-              <h1 className="font-medium text-white">{title}</h1>
+              <span className="font-extrabold stroke-black">{icon}</span>
+              <h1 className="font-thin text-black dark:text-white">{title}</h1>
             </div>
-            <p className="text-white/70">{desc}</p>
+            <p className="dark:text-white/70 text-black/70 text-[15px]">
+              {desc}
+            </p>
           </div>
         ))}
       </div>
