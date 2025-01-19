@@ -44,13 +44,17 @@ const FrequentAskedQuestions = () => {
       <h1 className="text-center font-medium text-xl mt-12">
         Frequently Asked Questions
       </h1>
-      <Accordion type="single" collapsible className="mx-auto px-20 mt-10">
+      <Accordion
+        type="single"
+        collapsible
+        className="mx-auto px-12 md:px-20 mt-10"
+      >
         {faqData.map(({ question, answer, value }) => (
           <AccordionItem key={value} value={value}>
-            <AccordionTrigger className="text-base font-thin ">
+            <AccordionTrigger className="text-sm md:text-base font-thin ">
               {question}
             </AccordionTrigger>
-            <AccordionContent className="font-thin text-xm text-black/70 dark:text-gray-300">
+            <AccordionContent className="font-thin text-xs md:text-xm text-black/70 dark:text-gray-300">
               {answer}
             </AccordionContent>
           </AccordionItem>

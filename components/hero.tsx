@@ -3,14 +3,14 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <div className="p-6 flex flex-col items-center mt-20">
+    <div className="p-2 md:p-4 lg:p-6 flex flex-col items-center mt-20">
       <div className="flex gap-3 items-center bg-[#E7E9EC] border-t-2 border-blue-500 rounded-full text-black p-2 px-3">
         <Sparkles className="w-4 h-4" />
-        <span className="text-sm font-medium">
+        <span className="text-xs md:text-sm font-medium">
           Simplify Your Video Approval Process
         </span>
       </div>
-      <div className="text-center text-5xl mt-8 font-bold leading-tight">
+      <div className="text-center text-4xl md:text-5xl mt-8 font-bold leading-tight">
         <p>All in One Place</p>
         <p>
           Review, Approve, and{" "}
@@ -20,7 +20,7 @@ const Hero = () => {
           </span>
         </p>
       </div>
-      <div className="mt-4 text-xl text-muted-foreground/90 text-center max-w-2xl">
+      <div className="mt-5 text-base md:text-xl text-muted-foreground/90 text-center max-w-2xl">
         <p>
           Effortlessly approve video uploads and collaborate securely with your
           team, all while keeping control of your YouTube channel.

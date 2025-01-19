@@ -35,16 +35,18 @@ const Footer = () => {
   };
 
   return (
-    <footer className="mt-10 pb-4 text-white  px-20">
+    <footer className="mt-10 pb-4 text-white px-6 md:px-20">
       <div className="container mx-auto">
-        <div className="flex flex-wrap justify-between mb-6">
-          <div className="mb-6">
-            <h1 className="text-xl  text-black dark:text-white font-semibold">
+        <div className="flex flex-col sm:flex-row sm:gap-4 justify-between mb-6 space-y-6 sm:space-y-0">
+          <div className="flex justify-center sm:justify-start mb-4 sm:mb-0">
+            <h1 className="text-xl text-black dark:text-white font-semibold">
               {footerData.logo}
             </h1>
           </div>
+
+          {/* Columns */}
           {footerData.columns.map((column, index) => (
-            <div className="mb-4" key={index}>
+            <div className="flex flex-col" key={index}>
               <h2 className="text-lg font-medium text-black dark:text-white mb-4">
                 {column.title}
               </h2>
@@ -64,7 +66,7 @@ const Footer = () => {
           ))}
         </div>
         <hr className="mb-4" />
-        <div className="text-center text-black dark:text-gray-400">
+        <div className="text-center text-black dark:text-gray-400 text-sm sm:text-base">
           {footerData.copyright}
         </div>
       </div>

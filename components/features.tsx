@@ -50,10 +50,10 @@ const Features = () => {
   return (
     <div className="mt-14 flex flex-col items-center">
       <div className="flex flex-col items-center">
-        <p className="text-2xl font-thin ">
+        <p className="text-xl max-w-72 text-center md:text-2xl font-thin ">
           Why YTApprover is the Best Platform for Content Collaboration
         </p>
-        <p className="text-base text-black dark:text-white/50 font-thin mt-4 max-w-xl text-center">
+        <p className="text-sm max-w-80 md:text-base text-black dark:text-white/50 font-thin mt-4 md:max-w-xl text-center">
           YtApprover offers video uploads, secure approvals, and speed up your
           YouTube workflow with features designed for seamless collaboration
           between editors and creators.
@@ -62,7 +62,7 @@ const Features = () => {
 
       <div>
         <p></p>
-        <div className="px-10 grid grid-cols-3 gap-3 mt-10">
+        <div className="px-10 grid grid-cols-1 space-y-3 md:grid-cols-3 gap-3 mt-10">
           {featureData.map(({ title, desc, id, icon }) => (
             <div className="flex flex-col space-y-2" key={id}>
               <div className="flex gap-3 items-center">

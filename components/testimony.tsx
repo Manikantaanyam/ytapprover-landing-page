@@ -82,10 +82,10 @@ const TestimonyCard = ({
 const TestimonialMarquee = () => {
   return (
     <div className="mt-20">
-      <p className="text-2xl font-thin text-center text-gray-900 dark:text-gray-100">
+      <p className="text-xl md:text-2xl font-thin text-center text-gray-900 dark:text-gray-100">
         See What our users Are Saying
       </p>
-      <div className="px-20">
+      <div className="px-10 md:px-20">
         <Marquee pauseOnHover className="mt-6 [--duration:40s] ">
           {testimonialData.map(({ id, img, name, role, testimonial }) => (
             <TestimonyCard
