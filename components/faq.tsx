@@ -50,7 +50,7 @@ const FrequentAskedQuestions = () => {
             <AccordionTrigger className="text-base font-thin ">
               {question}
             </AccordionTrigger>
-            <AccordionContent className="font-thin text-xm text-gray-300">
+            <AccordionContent className="font-thin text-xm text-black/70 dark:text-gray-300">
               {answer}
             </AccordionContent>
           </AccordionItem>
