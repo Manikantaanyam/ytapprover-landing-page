@@ -85,17 +85,19 @@ const TestimonialMarquee = () => {
       <p className="text-2xl font-thin text-center text-gray-900 dark:text-gray-100">
         See What our users Are Saying
       </p>
-      <Marquee className="mt-6">
-        {testimonialData.map(({ id, img, name, role, testimonial }) => (
-          <TestimonyCard
-            key={id}
-            img={img}
-            name={name}
-            role={role}
-            testimonial={testimonial}
-          />
-        ))}
-      </Marquee>
+      <div className="px-20">
+        <Marquee pauseOnHover className="mt-6 [--duration:40s] ">
+          {testimonialData.map(({ id, img, name, role, testimonial }) => (
+            <TestimonyCard
+              key={id}
+              img={img}
+              name={name}
+              role={role}
+              testimonial={testimonial}
+            />
+          ))}
+        </Marquee>
+      </div>
     </div>
   );
 };
