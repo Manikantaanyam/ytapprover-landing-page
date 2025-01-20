@@ -22,7 +22,7 @@ const HowItWorks = () => {
   return (
     <div className="mt-14 flex flex-col items-center">
       <h1 className="text-2xl font-thin">How YtApprover works ?</h1>
-      <div className="flex-col space-y-3 md:flex md:flex-row gap-3 mx-auto mt-10 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-3 mx-auto mt-10 px-10">
         {worksData.map(({ title, desc, icon }, key) => (
           <div
             className="flex flex-col space-y-3 border shadow-md rounded-md dark:bg-gray-900/60  p-6 max-w-xs"

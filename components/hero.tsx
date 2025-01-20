@@ -1,9 +1,13 @@
 import { Sparkles, Star } from "lucide-react";
 import { Button } from "./ui/button";
+import { Meteors } from "./ui/meteors";
 
 const Hero = () => {
   return (
     <div className="p-2 md:p-4 lg:p-6 flex flex-col items-center mt-20">
+      <div className="z-[-1] sm:block hidden">
+        <Meteors number={10} />
+      </div>
       <div className="flex gap-3 items-center bg-[#E7E9EC] border-t-2 border-blue-500 rounded-full text-black p-2 px-3">
         <Sparkles className="w-4 h-4" />
         <span className="text-xs md:text-sm font-medium">
@@ -30,9 +34,11 @@ const Hero = () => {
         <Button className="bg-[#ff0000] hover:bg-[#ff0000]/90 text-white ">
           Get started
         </Button>
-        <Button>
-          star on github <Star />
-        </Button>
+        <a href="https://github.com/Manikantaanyam/ytapprover-landing-page">
+          <Button>
+            star on github <Star />
+          </Button>
+        </a>
       </div>
     </div>
   );
