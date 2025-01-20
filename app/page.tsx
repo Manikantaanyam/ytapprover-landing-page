@@ -8,7 +8,7 @@ import TestimonialMarquee from "@/components/testimony";
 
 export default function Home() {
   return (
-    <div className="h-[300vh] ">
+    <div>
       <Navbar />
       <Hero />
       <Features />

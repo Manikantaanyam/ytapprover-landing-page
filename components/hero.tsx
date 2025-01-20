@@ -5,8 +5,8 @@ import { Meteors } from "./ui/meteors";
 const Hero = () => {
   return (
     <div className="p-2 md:p-4 lg:p-6 flex flex-col items-center mt-20">
-      <div className="z-[-1] sm:block hidden">
-        <Meteors number={10} />
+      <div className="z-[-1] px-40  overflow-hidden sm:block hidden">
+        <Meteors number={7} />
       </div>
       <div className="flex gap-3 items-center bg-[#E7E9EC] border-t-2 border-blue-500 rounded-full text-black p-2 px-3">
         <Sparkles className="w-4 h-4" />
