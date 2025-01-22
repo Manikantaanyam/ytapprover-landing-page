@@ -1,3 +1,6 @@
+"use client";
+import { signIn } from "next-auth/react";
+
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./theme-toggle";
 import { Button } from "./ui/button";
@@ -39,7 +42,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex gap-5">
-        <Button className="font-medium hidden lg:flex text-white bg-[#ff0000] hover:bg-[#ff0000]/90 p-2 rounded-md">
+        <Button
+          onClick={() => signIn()}
+          className="font-medium hidden lg:flex text-white bg-[#ff0000] hover:bg-[#ff0000]/90 p-2 rounded-md"
+        >
           Get started
         </Button>
         <div className="flex gap-6 items-center ">
@@ -72,7 +78,10 @@ const Navbar = () => {
                   ))}
                 </ul>
                 <Separator className="dark:bg-white/30 bg-black/30 h-[1px] mt-2 mb-4" />
-                <Button className="font-medium w-full   text-white bg-[#ff0000] hover:bg-[#ff0000]/90 p-2 rounded-md">
+                <Button
+                  onClick={() => signIn()}
+                  className="font-medium w-full   text-white bg-[#ff0000] hover:bg-[#ff0000]/90 p-2 rounded-md"
+                >
                   Get started
                 </Button>
               </PopoverContent>

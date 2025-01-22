@@ -5,8 +5,11 @@ import Hero from "@/components/hero";
 import HowItWorks from "@/components/how -it-works";
 import Navbar from "@/components/navbar";
 import TestimonialMarquee from "@/components/testimony";
+import { getUser } from "@/lib/action";
 
-export default function Home() {
+export default async function Home() {
+  const session = await getUser();
+
   return (
     <div>
       <Navbar />
